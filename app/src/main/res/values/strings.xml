@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android fundamentals 02.2-Activity-lifecycle-and-state</string>
+    <string name="item_list_value">Item list</string>
 </resources>
