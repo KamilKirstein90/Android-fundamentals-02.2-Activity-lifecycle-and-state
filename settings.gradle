@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Android fundamentals 02.2-Activity-lifecycle-and-state"
