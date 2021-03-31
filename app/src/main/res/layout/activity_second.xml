@@ -1,9 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SecondActivity"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tV_SecondActHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_an_item"
+        android:gravity="center"
+        android:textSize="@dimen/header_textSize"
+        android:layout_margin="@dimen/margin_header_SecondAct"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_apple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Apple"
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
+    <Button
+        android:id="@+id/btn_rice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Rice"
+        android:textSize="@dimen/item_textSize" />
+    <Button
+        android:id="@+id/bt_milk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Milk"
+        android:textSize="@dimen/item_textSize" />
+    <Button
+        android:id="@+id/btn_bread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Bread"
+        android:textSize="@dimen/item_textSize" />
+    <Button
+        android:id="@+id/btn_soap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Soap"
+        android:textSize="@dimen/item_textSize" />
+    <Button
+        android:id="@+id/btn_cheese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Cheese"
+        android:textSize="@dimen/item_textSize"/>
+    <Button
+        android:id="@+id/btn_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Water"
+        android:textSize="@dimen/item_textSize" />
+    <Button
+        android:id="@+id/btn_potato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Potato"
+        android:textSize="@dimen/item_textSize" />
+    <Button
+        android:id="@+id/btn_broccoli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Broccoli"
+        android:textSize="@dimen/item_textSize"/>
+    <Button
+        android:id="@+id/btn_banana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btn_secondAct"
+        android:gravity="center"
+        android:text="Bannana"
+        android:textSize="@dimen/item_textSize" />
+
+</LinearLayout>
