@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tV_header"
+        android:id="@+id/tV_MainActHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/item_list_value"
@@ -22,56 +21,64 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/item_textSize"/>
+        android:textSize="@dimen/item_textSize"
+        android:layout_marginBottom="@dimen/margin_tV_Bottom_Item"/>
 
     <TextView
         android:id="@+id/item2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:layout_marginBottom="@dimen/margin_tV_Bottom_Item"/>
 
     <TextView
         android:id="@+id/item3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/item_textSize"/>
+        android:textSize="@dimen/item_textSize"
+        android:layout_marginBottom="@dimen/margin_tV_Bottom_Item"/>
 
     <TextView
         android:id="@+id/item4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:layout_marginBottom="@dimen/margin_tV_Bottom_Item"/>
 
     <TextView
         android:id="@+id/item5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:layout_marginBottom="@dimen/margin_tV_Bottom_Item"/>
 
     <TextView
         android:id="@+id/item6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:layout_marginBottom="@dimen/margin_tV_Bottom_Item"/>
 
     <TextView
         android:id="@+id/item7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/item_textSize"/>
+        android:textSize="@dimen/item_textSize"
+        android:layout_marginBottom="@dimen/margin_tV_Bottom_Item"/>
 
     <TextView
         android:id="@+id/item8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:layout_marginBottom="@dimen/margin_tV_Bottom_Item"/>
 
     <TextView
         android:id="@+id/item9"
@@ -85,13 +92,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:layout_marginBottom="@dimen/margin_tV_Bottom_Item"/>
 
     <Button
         android:id="@+id/btn_addItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btnAddItem"
         android:gravity="center"
+        android:text="@string/btn_label_addItem"
         android:textSize="@dimen/item_textSize"
-        android:layout_margin="@dimen/margin_btnAddItem"/>
+        android:onClick="addItemFromSecondAct"/>
 </LinearLayout>
