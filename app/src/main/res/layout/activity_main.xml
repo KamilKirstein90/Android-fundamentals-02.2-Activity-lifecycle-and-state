@@ -104,4 +104,25 @@
         android:text="@string/btn_label_addItem"
         android:textSize="@dimen/item_textSize"
         android:onClick="addItemFromSecondAct"/>
+
+    <EditText
+        android:id="@+id/etLookForStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/look_for_store"
+        android:layout_margin="@dimen/margin_tV_Bottom_Item"
+        />
+
+    <Button
+        android:id="@+id/btn_lookForStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_btnAddItem"
+        android:gravity="center"
+        android:text="@string/look_for_store"
+        android:textSize="@dimen/item_textSize"
+        android:onClick="lookForStore" />
+
 </LinearLayout>

@@ -6,9 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,11 +33,9 @@ public class MainActivity extends AppCompatActivity {
     final static String EXTRA_MAIN_ACT_TV10 = "MainActivity.extras.tVItem10.value";
 
 
-
-
     List<TextView> lTVItems = new ArrayList<>(); // always create a instance of the list we want to populate first, in other way nullptr exception
     TextView tVItem1, tVItem2, tVItem3, tVItem4, tVItem5, tVItem6, tVItem7, tVItem8, tVItem9, tVItem10;
-
+    EditText etLookForStore;
     List<String> lMainActExtraKeys = new ArrayList<>();
 
     @Override
@@ -139,4 +141,32 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(intent, REQ_SECOND_ACT);
     }
 
+    // in this onClick method an implicit intent is called to check the location of an store in maps
+
+    public void lookForStore(View view) {
+
+        etLookForStore = findViewById(R.id.etLookForStore);
+        String loc = etLookForStore.getText().toString();
+
+        // to get geo data the string has to be parsed to the right uri with a geo search query
+        Uri addressUri = Uri.parse("geo:0,0?q=" + loc);
+
+        // now create the implicit intent
+        // in an implicit intent an action and the data for this intent is specified
+        //Intent.ACTION_* and Uri
+        Intent intent = new Intent(Intent.ACTION_VIEW, addressUri);
+
+        // resolve the intent and check to make sure the intent resolved successfully if so startActivity();
+        // with the resolveActivity and getPackageManager it is tried to find a Activity on the phone that can handle the reques
+        if (intent.resolveActivity(getPackageManager()) != null)
+        {
+            startActivity(intent);
+        }
+        else
+        {
+            Log.d("ImplicitIntents", "Cant't handle this intent!");
+            Toast.makeText(this, "Test", Toast.LENGTH_LONG).show();
+        }
+
+    }
 }

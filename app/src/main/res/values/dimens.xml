@@ -2,8 +2,8 @@
 <resources>
     <dimen name="header_textSize">36sp</dimen>
     <dimen name="item_textSize">24sp</dimen>
-    <dimen name="margin_btnAddItem">50dp</dimen>
-    <dimen name="margin_tVHeader">50dp</dimen>
+    <dimen name="margin_btnAddItem">20dp</dimen>
+    <dimen name="margin_tVHeader">10dp</dimen>
     <dimen name="margin_tV_Bottom_Item">10dp</dimen>
     <dimen name="margin_btn_secondAct">5dp</dimen>
     <dimen name="margin_header_SecondAct">10dp</dimen>
