@@ -31,7 +31,9 @@
         android:layout_margin="@dimen/margin_btn_secondAct"
         android:gravity="center"
         android:text="Rice"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
+
     <Button
         android:id="@+id/bt_milk"
         android:layout_width="match_parent"
@@ -39,7 +41,9 @@
         android:layout_margin="@dimen/margin_btn_secondAct"
         android:gravity="center"
         android:text="Milk"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
+
     <Button
         android:id="@+id/btn_bread"
         android:layout_width="match_parent"
@@ -47,7 +51,9 @@
         android:layout_margin="@dimen/margin_btn_secondAct"
         android:gravity="center"
         android:text="Bread"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
+
     <Button
         android:id="@+id/btn_soap"
         android:layout_width="match_parent"
@@ -55,7 +61,9 @@
         android:layout_margin="@dimen/margin_btn_secondAct"
         android:gravity="center"
         android:text="Soap"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
+
     <Button
         android:id="@+id/btn_cheese"
         android:layout_width="match_parent"
@@ -63,7 +71,9 @@
         android:layout_margin="@dimen/margin_btn_secondAct"
         android:gravity="center"
         android:text="Cheese"
-        android:textSize="@dimen/item_textSize"/>
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
+
     <Button
         android:id="@+id/btn_water"
         android:layout_width="match_parent"
@@ -71,7 +81,9 @@
         android:layout_margin="@dimen/margin_btn_secondAct"
         android:gravity="center"
         android:text="Water"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
+
     <Button
         android:id="@+id/btn_potato"
         android:layout_width="match_parent"
@@ -79,7 +91,9 @@
         android:layout_margin="@dimen/margin_btn_secondAct"
         android:gravity="center"
         android:text="Potato"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
+
     <Button
         android:id="@+id/btn_broccoli"
         android:layout_width="match_parent"
@@ -87,7 +101,9 @@
         android:layout_margin="@dimen/margin_btn_secondAct"
         android:gravity="center"
         android:text="Broccoli"
-        android:textSize="@dimen/item_textSize"/>
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
+
     <Button
         android:id="@+id/btn_banana"
         android:layout_width="match_parent"
@@ -95,6 +111,7 @@
         android:layout_margin="@dimen/margin_btn_secondAct"
         android:gravity="center"
         android:text="Bannana"
-        android:textSize="@dimen/item_textSize" />
+        android:textSize="@dimen/item_textSize"
+        android:onClick="addItemToMainAct"/>
 
 </LinearLayout>
